@@ -1,46 +1,50 @@
 {
-  "name": "@jimtang2/react-components",
-  "version": "0.0.3",
-  "type": "module",
-  "repository": {
-    "url": "https://github.com/jimtang2/react-components"
-  },
-  "scripts": {
-    "typecheck": "tsc --noEmit -p tsconfig.json",
-    "test": "vitest run --project=storybook",
-    "build:js": "bun build ./src/index.ts --outdir ./dist --target browser --format esm --packages external",
-    "build:types": "tsc -p tsconfig.build.json",
-    "build": "bun run build:js && bun run build:types",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "files": ["dist"],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "^19",
-    "react-dom": "^19"
-  },
-  "devDependencies": {
-    "@chromatic-com/storybook": "latest",
-    "@storybook/addon-a11y": "^10.6.1",
-    "@storybook/addon-docs": "^10.6.1",
-    "@storybook/addon-onboarding": "^10.6.1",
-    "@storybook/addon-vitest": "^10.6.1",
-    "@storybook/react-vite": "^10.6.1",
-    "@types/bun": "latest",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@vitest/browser-playwright": "latest",
-    "@vitest/coverage-v8": "latest",
-    "playwright": "latest",
-    "storybook": "^10.6.1",
-    "typescript": "^7.0.2",
-    "vitest": "latest"
-  }
+	"name": "@jimtang2/react-components",
+	"version": "0.0.3",
+	"repository": {
+		"url": "https://github.com/jimtang2/react-components"
+	},
+	"devDependencies": {
+		"@chromatic-com/storybook": "latest",
+		"@storybook/addon-a11y": "^10.6.1",
+		"@storybook/addon-docs": "^10.6.1",
+		"@storybook/addon-onboarding": "^10.6.1",
+		"@storybook/addon-themes": "^10.6.1",
+		"@storybook/addon-vitest": "^10.6.1",
+		"@storybook/react-vite": "^10.6.1",
+		"@tailwindcss/vite": "^4.3.3",
+		"@types/bun": "latest",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"@vitest/browser-playwright": "latest",
+		"@vitest/coverage-v8": "latest",
+		"playwright": "latest",
+		"storybook": "^10.6.1",
+		"tailwindcss": "^4.3.3",
+		"typescript": "^7.0.2",
+		"vitest": "latest"
+	},
+	"peerDependencies": {
+		"react": "^19",
+		"react-dom": "^19"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"typecheck": "tsc --noEmit -p tsconfig.json",
+		"test": "vitest run --project=storybook",
+		"build:js": "bun build ./src/index.ts --outdir ./dist --target browser --format esm --packages external",
+		"build:types": "tsc -p tsconfig.build.json",
+		"build": "bun run build:js && bun run build:types",
+		"storybook": "storybook dev -p 6006 --no-open --disable-telemetry",
+		"build-storybook": "storybook build"
+	},
+	"type": "module"
 }

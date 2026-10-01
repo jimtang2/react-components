@@ -1,3 +1,5 @@
-export { Button } from "./Button/Button"
-export { Header } from "./Header/Header"
-export { Page } from "./Page/Page"
+export { Page } from "./_examples/Page";
+export { Pbutton } from "./Pbutton/Pbutton";
+export { Pheader } from "./Pheader/Pheader";
+
+import "./style.css";
