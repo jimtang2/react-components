@@ -14,8 +14,12 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "files": ["dist"],
   "exports": {
-    ".": "./src"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "dependencies": {},
   "peerDependencies": {
