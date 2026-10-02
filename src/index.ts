@@ -1,5 +1,5 @@
-export { Page } from "./_examples/Page";
-export { Pbutton } from "./Pbutton/Pbutton";
-export { Pheader } from "./Pheader/Pheader";
-
-import "./style.css";
+export { Button } from "./components/Button/Button";
+export { Header } from "./components/Header/Header";
+export { Input } from "./components/Input/Input";
+export { Nav } from "./components/Nav/Nav";
+export { Table } from "./components/Table/Table";

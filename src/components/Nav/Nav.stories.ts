@@ -2,11 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { fn } from "storybook/test";
 
-import { Pheader } from "./Pheader";
+import { Nav } from "./Nav";
 
 const meta = {
-	title: "Core/Pheader",
-	component: Pheader,
+	title: "Components/Nav",
+	component: Nav,
 	tags: ["autodocs"],
 	parameters: {
 		layout: "fullscreen",
@@ -16,7 +16,7 @@ const meta = {
 		onLogout: fn(),
 		onCreateAccount: fn(),
 	},
-} satisfies Meta<typeof Pheader>;
+} satisfies Meta<typeof Nav>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

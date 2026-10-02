@@ -1,0 +1,38 @@
+@reference "../../tailwind.css";
+
+.input {
+	@apply text-sm;
+	@apply text-neutral-800 dark:text-neutral-200;
+	@apply bg-neutral-200 dark:bg-neutral-500;
+	@apply hover:bg-zinc-200 dark:hover:bg-zinc-500;
+	@apply border rounded-md;
+	@apply border-neutral-500 dark:border-neutral-600;
+	@apply transition-all duration-100;
+	@apply cursor-text;
+}
+
+.input--sm {
+	@apply py-px px-1;
+	@apply text-sm;
+	@apply hover:shadow-sm;
+}
+
+.input--md {
+	@apply py-1 px-1;
+	@apply text-base;
+	@apply hover:shadow-md;
+}
+
+.input--lg {
+	@apply py-2 px-2;
+	@apply text-base;
+	@apply hover:shadow-lg;
+}
+
+.input--primary {
+	@apply bg-sky-700 text-neutral-200;
+	@apply hover:bg-cyan-800;
+}
+
+.input-secondary {
+}
